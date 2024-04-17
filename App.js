@@ -9,6 +9,7 @@ import {
   Poppins_600SemiBold,
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
+import colors from "./theme/colors/colors";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -37,8 +38,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: colors.screenBackground,
+    paddingLeft: 30,
+    paddingTop: 90,
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
