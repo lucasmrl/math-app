@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Link } from "expo-router";
 import colors from "../theme/colors/colors";
 
 export default function ChallengeListItem(props) {
@@ -8,24 +9,26 @@ export default function ChallengeListItem(props) {
   }
 
   return (
-    <TouchableOpacity onPress={onPressFunction}>
-      <Text style={styles.subject}>{props.subject}</Text>
-      <View style={styles.infoLine}>
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <MaterialCommunityIcons
-            name="timer-outline"
-            size={20}
-            color="black"
-          />
-          <Text style={styles.info}>{props.time}</Text>
+    <Link href="/score" asChild>
+      <TouchableOpacity onPress={onPressFunction}>
+        <Text style={styles.subject}>{props.subject}</Text>
+        <View style={styles.infoLine}>
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <MaterialCommunityIcons
+              name="timer-outline"
+              size={20}
+              color="black"
+            />
+            <Text style={styles.info}>{props.time}</Text>
+          </View>
+          <Text style={styles.info}>
+            |{"  "}
+            {props.countQuestions}
+          </Text>
         </View>
-        <Text style={styles.info}>
-          |{"  "}
-          {props.countQuestions}
-        </Text>
-      </View>
-      <View style={styles.bottomBorder} />
-    </TouchableOpacity>
+        <View style={styles.bottomBorder} />
+      </TouchableOpacity>
+    </Link>
   );
 }
 

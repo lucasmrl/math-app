@@ -9,9 +9,9 @@ import {
   Poppins_600SemiBold,
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
-import colors from "./theme/colors/colors";
-import Header from "./components/Header";
-import ChallengeListItem from "./components/ChallengeListItem";
+import colors from "../theme/colors/colors";
+import Header from "../components/Header";
+import ChallengeListItem from "../components/ChallengeListItem";
 
 SplashScreen.preventAutoHideAsync();
 
