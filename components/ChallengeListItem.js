@@ -22,7 +22,7 @@ export default function ChallengeListItem(props) {
             <Text style={styles.info}>{props.time}</Text>
           </View>
           <Text style={styles.info}>
-            |{"  "}
+            |{"    "}
             {props.countQuestions}
           </Text>
         </View>
