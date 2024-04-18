@@ -34,18 +34,6 @@ export default function App() {
     return null;
   }
 
-  function ChallengeListItem(props) {
-    return (
-      <View style={{}}>
-        <Text>{props.subject}</Text>
-        <View>
-          <Text>{props.time}</Text>
-          <Text>{props.countQuestions}</Text>
-        </View>
-      </View>
-    );
-  }
-
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
       <Header title="Math" showSettingsIcon={true} />
