@@ -19,16 +19,16 @@ export default function Score() {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
+            gap: 20,
           }}
         >
           <Text style={styles.topNumber}>+</Text>
           <View
             style={{
               alignItems: "flex-end",
-              justifyContent: "center",
             }}
           >
-            <Text style={styles.topNumber}>2</Text>
+            <Text style={styles.topNumber}>10</Text>
             <Text style={styles.bottomNumber}>2</Text>
           </View>
         </View>
@@ -68,12 +68,10 @@ const styles = StyleSheet.create({
   topNumber: {
     fontFamily: "Poppins_400Regular",
     fontSize: 105,
-    paddingBottom: 0,
   },
   bottomNumber: {
     fontFamily: "Poppins_400Regular",
     fontSize: 105,
-    paddingBottom: 0,
   },
   button: {
     alignItems: "center",

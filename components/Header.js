@@ -9,7 +9,7 @@ export default function Header(props) {
       <View style={styles.container}>
         <View style={styles.headerContainer}>
           <Text style={styles.challengerHeaderText}>1/100</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
             <MaterialCommunityIcons
               name="timer-outline"
               size={20}
