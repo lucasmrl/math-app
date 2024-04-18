@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
   },
   scorePercentage: {
     fontFamily: "Poppins_700Bold",
-    fontSize: 80,
-    paddingBottom: 4,
+    fontSize: 105,
+    paddingBottom: 0,
   },
   scoreMsg: {
     fontFamily: "Poppins_700Bold",
