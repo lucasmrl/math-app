@@ -1,9 +1,17 @@
+import React, { useRef, useEffect } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
+import LottieView from "lottie-react-native";
 import colors from "../theme/colors/colors";
 import Header from "../components/Header";
 
 export default function Score() {
+  const animation = useRef(null);
+  useEffect(() => {
+    // You can control the ref programmatically, rather than using autoPlay
+    // animation.current?.play();
+  }, []);
+
   return (
     <View style={styles.container}>
       <Header title="Score" showSettingsIcon={false} />
@@ -14,8 +22,19 @@ export default function Score() {
           justifyContent: "center",
         }}
       >
-        <Text style={styles.scorePercentage}>100%</Text>
-        <Text style={styles.scoreMsg}>Congrats!</Text>
+        <LottieView
+          autoPlay
+          ref={animation}
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          source={require("../assets/animations/celebration.json")}
+        >
+          <Text style={styles.scorePercentage}>100%</Text>
+          <Text style={styles.scoreMsg}>Congrats!</Text>
+        </LottieView>
       </View>
       <View
         style={{

@@ -9,7 +9,7 @@ export default function ChallengeListItem(props) {
   }
 
   return (
-    <Link href="/challenge" asChild>
+    <Link href="/score" asChild>
       <TouchableOpacity onPress={onPressFunction}>
         <Text style={styles.subject}>{props.subject}</Text>
         <View style={styles.infoLine}>
