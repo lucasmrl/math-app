@@ -12,9 +12,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lucasmrl.mathapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +28,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-font", "expo-router"]
+    "plugins": [
+      "expo-font",
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8f30e1f8-96ed-4f77-ac55-7058d2d2fe59"
+      }
+    }
   }
 }
